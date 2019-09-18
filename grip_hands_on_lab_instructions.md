@@ -61,8 +61,11 @@
    tar -zxvf grip_course_annovar_db.tar.gz
 
    ```
-7. Change directory to `sample_data`
+7. Create and change directory to `sample_data`. Move sample data and bed file to `sample_data`
    ```
+   mkdir sample_data
+   mv *.fq.gz sample_data/
+   mv *bed sample_data/
    cd sample_data
    ```
 8. Perform FASTQC step
@@ -95,7 +98,7 @@
     ``` 
 15. Call variant
     ```
-    samtools mpileup -BA -q 20 -Q 30 -d 4000 -l grip_course.bed -f /home/bioseq/Downloads/gatk_b37/human_g1k_v37.fasta hd701_realign.bam | varscan -Xmx4G mpileup2vcf --min-coverage 8 --min-var-freq 0.05 --p-value 0.05 --min-avg-qual 30 --strand-filter 1 --output-vcf 1 --variants >hd701_raw.vcf
+    samtools mpileup -BA -q 20 -Q 30 -d 4000 -l grip_course.bed -f /home/bioseq/Downloads/gatk_b37/human_g1k_v37.fasta hd701_realigned.bam | varscan -Xmx4G mpileup2vcf --min-coverage 8 --min-var-freq 0.05 --p-value 0.05 --min-avg-qual 30 --strand-filter 1 --output-vcf 1 --variants >hd701_raw.vcf
     ```
 16. Compress and index VCF file
     ```
