@@ -71,7 +71,7 @@
    ```
 9. Align sequence to GRCh37
    ```
-   >bwa mem -M -v 1 -t 2 -R "@RG\\tID:hd701\\tSM:hd701\\tPL:ILLUMINA_NEXTSEQ\\tPI:150\\tCN:roy_lab" /home/bioseq/Downloads/gatk-b37/human_g1k_v37.fasta hd701_R1_qc.fq.gz hd701_R2_qc.fq.gz >hd701_raw.sam
+   >bwa mem -M -v 1 -t 2 -R "@RG\\tID:hd701\\tSM:hd701\\tPL:ILLUMINA_NEXTSEQ\\tPI:150\\tCN:roy_lab" /home/bioseq/Downloads/gatk_b37/human_g1k_v37.fasta hd701_R1_qc.fq.gz hd701_R2_qc.fq.gz >hd701_raw.sam
    ```
 10. Encode the SAM file into a BAM file
     ```
