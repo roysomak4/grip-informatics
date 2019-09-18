@@ -102,8 +102,8 @@
     ```
 16. Compress and index VCF file
     ```
-    bgzip grip_course_raw.vcf
-    tabix -p vcf grip_course_raw.vcf.gz
+    bgzip hd701_raw.vcf
+    tabix -p vcf hd701_raw.vcf.gz
     ```
 17. Annotate variants
     ```
