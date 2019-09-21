@@ -13,13 +13,14 @@
 1. Download PuTTy on your system from the following link: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 2. Click on `putty-64bit-0.72-installer.msi` for a 64 bit windows installer.
 3. Once downloaded, double click on the installer file and follow the setup instructions.
-4. This will install `putty.exe` and `pscp.exe` on your windows computer.
+4. This will install `putty.exe`, `pagent.exe` and `pscp.exe` on your windows computer in the folder `C:\Program Files\PuTTY`.
 5. Download SSH keys for accessing the VMs from: https://drive.google.com/open?id=1mWcMYyyhXGIU15udYzdczzLBevrZGXv2
-6. Open Putty application
-7. Enter the IP address provided by your instructor in in the `hostname (IP address)` textbox.
-8. On the left panel, go to `SSH` under `Connection` and click on `Auth`.
-9. Click on the `Browse` button on the right panel and select the downloaded key file `id_grip_rsa.ppk`
-10. Click `Open`. This should open up the terminal requesting to enter the username for the VM to login in to.
+6. Open `pagent.exe` located in `C:\Program Files\PuTTY`
+7. The `pagent` starts in the status bar (lower right).
+8. Right click and choose the option `Add key`.
+9. Choose the `id_grip_rsa.ppk` file that was downloaded.
+10. Start `putty.exe`. Enter the IP address provided by your instructor in in the `hostname (IP address)` textbox.
+11. Click `Open`. This should open up the terminal requesting to enter the username for the VM to login in to.
 
 > **Linux or Mac**
 1. Download SSH keys for accessing the VMs from: https://drive.google.com/open?id=1mWcMYyyhXGIU15udYzdczzLBevrZGXv2
